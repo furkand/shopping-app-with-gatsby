@@ -3,8 +3,9 @@ import BackgroundImage from "gatsby-background-image";
 
 export const BackgroundPart = ({img,styleClass,title,children,imgMobile}) =>{ 
     const isClient = typeof window !== 'undefined'
+    let userWidth;
     if(isClient){
-        const userWidth = this.window.innerWidth
+        let userWidth = this.window.innerWidth
     }
     
     return (
