@@ -33,6 +33,21 @@ h1,h2,h3,h4,h5{
   background-position: center;
   background-size: cover;
 }
+.mobile-background{
+  min-height:100vh;
+  display:flex;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) !important;
+  padding-top: 30vh;
+  justify-content: center;
+  background-size: contain!important;
+}
+.mobile-background h1{
+  font-size: 35px !important;
+  width: 300px;
+  opacity: 0.8;
+  line-height: 3rem;
+}
 .btn-yellow{
   color:var(--mainYellow) !important;
   border: 1px solid var(--mainYellow) !important;
