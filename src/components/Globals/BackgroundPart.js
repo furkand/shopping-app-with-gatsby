@@ -5,7 +5,7 @@ export const BackgroundPart = ({img,styleClass,title,children,imgMobile}) =>{
     const isClient = typeof window !== 'undefined'
     let userWidth;
     if(isClient){
-        let userWidth = this.window.innerWidth
+        let userWidth = window.innerWidth
     }
     
     return (

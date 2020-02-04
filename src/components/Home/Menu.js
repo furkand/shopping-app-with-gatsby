@@ -5,6 +5,7 @@ import Img from "gatsby-image";
 
 
 const getCategories = items =>{
+    console.log(items)
     let categories = items.map(item=>{
         return item.node.category[0]
     })
