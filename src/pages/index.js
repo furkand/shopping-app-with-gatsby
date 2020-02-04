@@ -12,7 +12,7 @@ const IndexPage = ({data}) => (
 
   <Layout> 
     <SEO title="Home" keywords={["gatsby",'application', "react" ]}/>
-    <BackgroundPart imgMobile={data.imgMobile.childImageSharp.fluid} img={data.img.childImageSharp.fluid} title="Join to the Revolution" styleClass="default-background"/>
+    <BackgroundPart img={data.img.childImageSharp.fluid} title="Join to the Revolution" styleClass="default-background"/>
     <Info/>
     <Menu items={data.menu}/>
     <EnergyItems />
@@ -24,14 +24,6 @@ export const query = graphql`
 {
 img: file(relativePath: { eq:
 "teslaimg.jpg"}) {
-  childImageSharp{
-    fluid {
-      ...GatsbyImageSharpFluid_tracedSVG 
-      }
-    }
-  }
-  imgMobile: file(relativePath: { eq:
-"mobilebackground.jpg"}) {
   childImageSharp{
     fluid {
       ...GatsbyImageSharpFluid_tracedSVG 

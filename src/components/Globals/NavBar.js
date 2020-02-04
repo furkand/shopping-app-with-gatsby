@@ -52,7 +52,7 @@ import {FaShoppingCart} from "react-icons/fa"
                             </li>)}
                         )}
                         <li className="nav-item ml-sm-5">
-                            <FaShoppingCart className="cart-icon" />
+                            <FaShoppingCart className="cart-icon snipcart-checkout" />
                         </li>
                     </ul>
                 </div>
