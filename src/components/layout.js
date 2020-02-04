@@ -1,8 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
-import NavBar from "./Globals/NavBar"
 
 import "./layout.css"
+
+import NavBar from "./Globals/NavBar"
+import {Footer} from "./Globals/Footer"
 
 const Layout = ({ children }) => {
 
@@ -10,6 +12,7 @@ const Layout = ({ children }) => {
     <>
     <NavBar/>
     {children}
+    <Footer/>
     </>
   )
 }

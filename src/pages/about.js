@@ -6,12 +6,12 @@ import SEO from "../components/seo"
 import {BackgroundPart} from "../components/Globals/BackgroundPart"
 import {Info} from "../components/Home/Info"
 
-const IndexPage = ({data}) => (
+const AboutPage = ({data}) => (
 
   <Layout>
     {console.log(data)}
     <SEO title="Home" keywords={["gatsby",'application', "react" ]}/>
-    <BackgroundPart img={data.img.childImageSharp.fluid} title="Join to the Revolution" styleClass="default-background"/>
+    <BackgroundPart img={data.img.childImageSharp.fluid} title="about us" styleClass="about-background"/>
     <Info/>
   </Layout>
 )
@@ -19,7 +19,7 @@ const IndexPage = ({data}) => (
 export const query = graphql`
 {
 img: file(relativePath: { eq:
-"teslaimg.jpg"}) {
+"about.jpg"}) {
   childImageSharp{
     fluid {
       ...GatsbyImageSharpFluid_tracedSVG 
@@ -29,4 +29,4 @@ img: file(relativePath: { eq:
 }`
 
 
-export default IndexPage
+export default AboutPage

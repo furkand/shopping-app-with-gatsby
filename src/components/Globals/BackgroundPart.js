@@ -16,3 +16,4 @@ BackgroundPart.defaultProps = {
     title: "default title",
     styleClass: "default-background"
 }
+

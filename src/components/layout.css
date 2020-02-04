@@ -1,5 +1,5 @@
 :root {
-  --mainBrown: #2d1ef1;
+  --mainBrown: #332311;
   --mainYellow: rgb(255, 158, 9);
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
@@ -12,7 +12,7 @@ body{
   font-family: Verdana, Genava, Tahoma, sans-serif !important;
 }
 h1,h2,h3,h4,h5{
-  font-family: 'Courier New', Courier, monospace !important;
+  font-family: Verdana, Genava, Tahoma, sans-serif !important;
   letter-spacing: 0.25rem !important;
 }
 .text-yellow{
@@ -28,7 +28,33 @@ h1,h2,h3,h4,h5{
   display:flex;
   align-items:center;
   justify-content: center;
-  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background: linear-gradient(rgba(214, 14, 0, 0.5), rgba(255, 158, 9, 0.5));
+  opacity:1 !important;
+  background-position: center;
+  background-size: cover;
+}
+.btn-yellow{
+  color:var(--mainYellow) !important;
+  border: 1px solid var(--mainYellow) !important;
+}
+.about-button{
+  display: table;
+  margin: auto;
+}
+.btn-yellow:hover {
+  color: white!important;
+  background-color: var(--mainYellow)!important;
+}
+
+.footer{
+  background-color: var(--mainBrown);
+}
+.about-background{
+  min-height:60vh;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  background: linear-gradient(rgba(214, 14, 0, 0.5), rgba(255, 158, 9, 0.5));
   opacity:1 !important;
   background-position: center;
   background-size: cover;

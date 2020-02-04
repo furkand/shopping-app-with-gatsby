@@ -9,7 +9,7 @@ import {FaShoppingCart} from "react-icons/fa"
  export default class NavBar extends Component{
      state = {
          navbarOpen : false,
-         css : "collapse navbar-collapse show",
+         css : "collapse navbar-collapse",
          links: [
              {
                  id:1,
