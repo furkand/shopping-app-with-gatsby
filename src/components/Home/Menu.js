@@ -66,6 +66,14 @@ export default class Menu extends Component{
                                                 <p className="text-muted">
                                                     {node.description.description}
                                                 </p>
+                                                <button 
+                                                    className="categories-button btn text-capitalize btn-yellow snipcart-add-item"
+                                                    data-item-id={node.id}
+                                                    data-item-name={node.title}
+                                                    data-item-price={node.price}
+                                                    data-item-url="https://fake-tesla-shopping-web-site.netlify.com"
+                                                    > Add to Card
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
