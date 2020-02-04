@@ -18,10 +18,27 @@ export default class Menu extends Component{
                 <section className="menu py-5">
                     <div className="container">
                         <Title title="Our Super Cars"/>
-                        <div className="row mb-5">
-                            <div className="col">
-                                <h1>Our super cars</h1>
-                            </div>
+                        <div className="row mb-5"> 
+                            {this.state.cars.map(({node})=>{
+                                return(
+                                    <div className="col-11 col-md" key={node.id} > 
+                                        <div>
+                                            <Img fixed={node.image.fixed} />
+                                        </div>
+                                        <div>
+                                            <div className="flex-grow-1 px-3">
+                                                <div className="d-flex justify-content-between">
+                                                    <h6 className="mb-0">{node.title}</h6>
+                                                    <h6 className="mb-0">Price: {node.price}$</h6>
+                                                </div>
+                                                <p className="text-muted">
+                                                    {node.description.description}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            })}  
                         </div>
                     </div>
                 </section>
