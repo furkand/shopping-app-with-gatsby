@@ -9,7 +9,7 @@ import Menu from "../components/Home/Menu"
 
 const IndexPage = ({data}) => (
 
-  <Layout>
+  <Layout> 
     <SEO title="Home" keywords={["gatsby",'application', "react" ]}/>
     <BackgroundPart imgMobile={data.imgMobile.childImageSharp.fluid} img={data.img.childImageSharp.fluid} title="Join to the Revolution" styleClass="default-background"/>
     <Info/>

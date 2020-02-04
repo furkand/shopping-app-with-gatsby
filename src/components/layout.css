@@ -48,9 +48,11 @@ h1,h2,h3,h4,h5{
   opacity: 0.8;
   line-height: 3rem;
 }
-.btn-yellow{
+.btn-yellow, .btn-yellow:focus{
   color:var(--mainYellow) !important;
   border: 1px solid var(--mainYellow) !important;
+  outline: none;
+  box-shadow:none!important;
 }
 .about-button{
   display: table;

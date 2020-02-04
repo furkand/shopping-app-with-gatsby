@@ -9,7 +9,6 @@ import {Info} from "../components/Home/Info"
 const AboutPage = ({data}) => (
 
   <Layout>
-    {console.log(data)}
     <SEO title="Home" keywords={["gatsby",'application', "react" ]}/>
     <BackgroundPart img={data.img.childImageSharp.fluid} title="about us" styleClass="about-background"/>
     <Info/>
