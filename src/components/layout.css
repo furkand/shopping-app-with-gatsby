@@ -11,6 +11,25 @@
 html{
   scroll-behavior: smooth;
 }
+.home-page-title{
+  display: block;
+
+  color: #F3E367!important;
+}
+.nav-item{
+  font-weight: bold !important;
+}
+.submit-form{
+  color: #7F8688 !important;
+  background-color: #F3E367 !important;
+  border: 1px solid #F3E367 !important;
+}
+.submit-form:hover, .submit-form:focus{
+  color: #F3E367 !important;
+  background-color: #7F8688 !important;
+  border: 1px solid #7F8688 !important;
+  box-shadow: none !important;
+}
 .discover , .discover:hover, .discover:visited{
     border: 3px solid #F3E367;
     color: #F3E367;
@@ -23,6 +42,9 @@ html{
 }
 .navbar {
   background-color: var(--mainYellow)!important;
+}
+.description-energy{
+  font-size: 14px;
 }
 body{
   background: var(--mainWhite);
@@ -42,14 +64,43 @@ h1,h2,h3,h4,h5{
   font-size: 2rem;
   margin-bottom: 20px;
 }
+.home-page-title{
+  padding-top: 40vh;
+}
+.categories{
+  margin-right:5px;
+}
+.single-item{
+  margin-top:40px;
+}
+.gatsby-image-wrapper{
+  margin: auto;
+}
+.car-image{
+  width: fit-content!important;
+  margin: auto;
+}
+.categories-button{
+margin: auto;
+width: max-content;
+display: table!important;
+}
+.car-content-container p {
+  min-height: 250px;
+}
+
 .default-background{
   min-height:100vh;
   background: linear-gradient(rgba(127, 134, 136,0.5));
   opacity:1 !important;
-
-
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+.home-page-title{
+  width: 100%;
+  text-align: center;
+}
 .btn-yellow, .btn-yellow:focus{
   color:var(--mainGrey) !important;
   border: 1px solid var(--mainYellow) !important;
@@ -69,8 +120,12 @@ h1,h2,h3,h4,h5{
 .footer{
   background-color: #7F8688;
 }
+footer h3 {
+  color:white !important;
+  font-size:15px;
+}
 .about-background{
-  min-height:30vh;
+  min-height:50vh;
   display:flex;
   align-items:center;
   justify-content: center;
@@ -82,8 +137,18 @@ h1,h2,h3,h4,h5{
 .about-background h1{
   padding-top:0vh;
 }
-
+@media only screen and (min-width: 580px) {
+.nav-item{
+  padding-top:5px!important;
+}
+}
 @media only screen and (max-width: 580px) {
+  .car-content-container p {
+    min-height: auto;
+  }
+  .about-background{
+    min-height:30vh;
+  }
   .home-page-title{
     display: block;
     width: 100px;
@@ -128,17 +193,7 @@ h1,h2,h3,h4,h5{
     background-color:#929D9E ;
     color:white;
   }
-  .submit-form{
-    color: #7F8688 !important;
-    background-color: #F3E367 !important;
-    border: 1px solid #F3E367 !important;
-  }
-  .submit-form:hover, .submit-form:focus{
-    color: #F3E367 !important;
-    background-color: #7F8688 !important;
-    border: 1px solid #7F8688 !important;
-    box-shadow: none !important;
-  }
+  
   footer h3 {
     color:white;
     font-size:15px;

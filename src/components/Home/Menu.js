@@ -51,10 +51,10 @@ export default class Menu extends Component{
                             {this.state.cars.map(({node})=>{
                                 return(
                                     <div className="col-11 col-md single-item" key={node.id} > 
-                                        <div>
+                                        <div className="car-image">
                                             <Img fixed={node.image.fixed} />
                                         </div>
-                                        <div>
+                                        <div className="car-content-container">
                                             <div className="flex-grow-1 px-3">
                                                 <div className="price-and-title">
                                                     <h6 className="title mb-0">{node.title}</h6>
