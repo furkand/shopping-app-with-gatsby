@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/fdmrtrk/shopping-app-with-gatsby/master/public/app.gif"  >
+<img src="https://raw.githubusercontent.com/fdmrtrk/shopping-app-with-gatsby/master/app.gif"  >
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
