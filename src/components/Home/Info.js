@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "gatsby"
 import {Title} from "../Globals/Title"
 
-export const Info = () =>{
+export const Info = ({inInfo}) =>{
     return(
         <section className="py-5">
             <div className="container">
@@ -15,9 +15,9 @@ export const Info = () =>{
                             alias asperiores! Ab laudantium, nihil facere tempora possimus 
                             voluptas neque obcaecati id. Voluptatum, officiis!
                         </p>
-                        <Link className="about-button" to="/about/">
+                        {inInfo?( <Link className="about-button" to="/about/">
                         <button className="btn text-uppercase btn-yellow"> About Page</button>
-                         </Link>
+                         </Link>) : <div></div>}
                     </div>
                    
                 </div>

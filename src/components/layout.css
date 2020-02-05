@@ -1,11 +1,29 @@
 :root {
   --mainBrown: #332311;
-  --mainYellow: rgb(255, 158, 9);
-  --mainGrey: #ece8dc;
+  --mainYellow: #F3E367;
+  --mainGrey: #7F8688;
   --mainWhite: #fff;
   --mainDark: #222;
 }
-
+#__gatsby{
+  scroll-behavior: smooth; 
+}
+html{
+  scroll-behavior: smooth;
+}
+.discover , .discover:hover, .discover:visited{
+    border: 3px solid #F3E367;
+    color: #F3E367;
+    font-weight: bold;
+    margin:auto;
+    text-transform: uppercase;
+    padding: 8px;
+    display: table;
+    margin-top:20px;
+}
+.navbar {
+  background-color: var(--mainYellow)!important;
+}
 body{
   background: var(--mainWhite);
   color:  var(--mainDark);
@@ -16,42 +34,27 @@ h1,h2,h3,h4,h5{
   letter-spacing: 0.25rem !important;
 }
 .text-yellow{
-  color: var(--mainYellow);
+  color: var(--mainGrey);
 }
 .cart-icon {
   cursor: pointer;
-  color: var(--mainYellow);
+  color: var(--mainGrey);
   font-size: 2rem;
+  margin-bottom: 20px;
 }
 .default-background{
   min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content: center;
-  background: linear-gradient(rgba(214, 14, 0, 0.5), rgba(255, 158, 9, 0.5));
+  background: linear-gradient(rgba(127, 134, 136,0.5));
   opacity:1 !important;
-  background-position: center;
-  background-size: cover;
+
+
 }
-.mobile-background{
-  min-height:100vh;
-  display:flex;
-  align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) !important;
-  padding-top: 30vh;
-  justify-content: center;
-  background-size: contain!important;
-}
-.mobile-background h1{
-  font-size: 35px !important;
-  width: 300px;
-  opacity: 0.8;
-  line-height: 3rem;
-}
+
 .btn-yellow, .btn-yellow:focus{
-  color:var(--mainYellow) !important;
+  color:var(--mainGrey) !important;
   border: 1px solid var(--mainYellow) !important;
   outline: none;
+  background-color: var(--mainYellow)!important;
   box-shadow:none!important;
 }
 .about-button{
@@ -64,10 +67,10 @@ h1,h2,h3,h4,h5{
 }
 
 .footer{
-  background-color: var(--mainBrown);
+  background-color: #7F8688;
 }
 .about-background{
-  min-height:60vh;
+  min-height:30vh;
   display:flex;
   align-items:center;
   justify-content: center;
@@ -75,4 +78,82 @@ h1,h2,h3,h4,h5{
   opacity:1 !important;
   background-position: center;
   background-size: cover;
+}
+.about-background h1{
+  padding-top:0vh;
+}
+
+@media only screen and (max-width: 580px) {
+  .home-page-title{
+    display: block;
+    width: 100px;
+    text-align: left!important;
+    font-size: 40px!important;
+    padding-left: 15px;
+    padding-top: 30vh;
+    color: #F3E367!important;
+  }
+  .cart-item{
+    padding-top: 10px;
+  }
+  .nav-item{
+    font-weight: bold !important;
+  }
+  .col-md div{
+    width: fit-content;
+    margin: auto;
+  }
+  .categories-button{
+    display: table!important;
+    margin: auto!important;
+  }
+  .single-item{
+    display: table;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .car-models{
+    width: max-content !important;
+  }
+  .categories{
+    float:left;
+    margin-top: 10px!important;
+    margin-left:10px!important;
+    font-size:13px!important;
+  }
+  h1{
+    font-size:34px!important;
+  }
+  .contact{
+    background-color:#929D9E ;
+    color:white;
+  }
+  .submit-form{
+    color: #7F8688 !important;
+    background-color: #F3E367 !important;
+    border: 1px solid #F3E367 !important;
+  }
+  .submit-form:hover, .submit-form:focus{
+    color: #F3E367 !important;
+    background-color: #7F8688 !important;
+    border: 1px solid #7F8688 !important;
+    box-shadow: none !important;
+  }
+  footer h3 {
+    color:white;
+    font-size:15px;
+  }
+  .title,.price{
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    opacity: 0.8;
+    text-align: left;
+  }
+  .details {
+    width: 100% !important;
+  }
+  .price-and-title{
+    width: 100%!important;
+  }
 }

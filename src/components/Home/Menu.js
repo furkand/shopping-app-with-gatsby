@@ -5,7 +5,6 @@ import Img from "gatsby-image";
 
 
 const getCategories = items =>{
-    console.log(items)
     let categories = items.map(item=>{
         return item.node.category[0]
     })
@@ -22,7 +21,6 @@ export default class Menu extends Component{
         }
     }
     handleItems = (category) => {
-        console.log(category)
         if(category === "ALL" ){
             this.setState({
                 ...this.state,
@@ -34,34 +32,33 @@ export default class Menu extends Component{
                 cars: this.state.raw.filter(item=>{ if(item.node.category[0] ===category){ return item}})
             })
         } 
-        console.log(this.state.cars)
     }
     render(){
 
         if(this.state.cars.length > 0){
             return(
-                <section className="menu py-5">
+                <section className="menu py-5" id="cars">
                     <div className="container">
                         <Title title="Our Super Cars"/>
                             <div className="row mb-5">
-                                <div className="col-10 mx-auto text-center">
+                                <div className="col-10 mx-auto text-center car-models">
                                     {this.state.categories.map((item,index)=>(
-                                        <button onClick={()=>this.handleItems(item)} className="categories-button btn text-capitalize btn-yellow" key={index} > {item}</button>
+                                        <button onClick={()=>this.handleItems(item)} className="categories btn text-capitalize btn-yellow" key={index} > {item}</button>
                                     ))}
                                 </div>
                             </div>
                         <div className="row mb-5"> 
                             {this.state.cars.map(({node})=>{
                                 return(
-                                    <div className="col-11 col-md" key={node.id} > 
+                                    <div className="col-11 col-md single-item" key={node.id} > 
                                         <div>
                                             <Img fixed={node.image.fixed} />
                                         </div>
                                         <div>
                                             <div className="flex-grow-1 px-3">
-                                                <div className="d-flex justify-content-between">
-                                                    <h6 className="mb-0">{node.title}</h6>
-                                                    <h6 className="mb-0">Price: {node.price}$</h6>
+                                                <div className="price-and-title">
+                                                    <h6 className="title mb-0">{node.title}</h6>
+                                                    <h6 className="price mb-0">Price: {node.price}$</h6>
                                                 </div>
                                                 <p className="text-muted">
                                                     {node.description.description}

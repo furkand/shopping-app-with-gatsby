@@ -34,9 +34,9 @@ import {FaShoppingCart} from "react-icons/fa"
      
     render(){
         return(
-            <nav className="navbar navbar-expand-sm bg-light navbar-light" > 
+            <nav className="navbar navbar-expand-sm  navbar-light" > 
                 <Link to="/" className="navbar-brand logo" > 
-                    <img src={logo} alt="logo"/>
+                <img src={logo} width="40px" className={logo} alt=""/>
 
                 </Link>
                 <button className="navbar-toggler" type="button" onClick={this.navbarHandler}>
@@ -51,9 +51,9 @@ import {FaShoppingCart} from "react-icons/fa"
                                 </Link>
                             </li>)}
                         )}
-                        <li className="nav-item ml-sm-5">
-                                <FaShoppingCart className="cart-icon snipcart-checkout" />
-                                <span className="snipcart-items-count"/>
+                        <li className="nav-item ml-sm-5 cart-item">
+                                
+                                <span className="snipcart-items-count"> <FaShoppingCart className="cart-icon snipcart-checkout" /></span>
                         </li>
                     </ul>
                 </div>

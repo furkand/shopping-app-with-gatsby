@@ -34,7 +34,7 @@ export default function Contact (){
                                 rows="5"
                                 placeholder="Tell me what you want."/>
                         </div>
-                        <button className="btn btn-yellow btn-block text-capitalize">Submit</button>
+                        <button className="submit-form btn btn-block text-capitalize">Submit</button>
                     </form>
                 </div>
             </div>

@@ -20,7 +20,7 @@ export default function EnergyItems() {
     return(
         <StaticQuery query={getProducts} render={data=>{
             return(
-            <section className="py-5">
+            <section className="products">
               <div className="container">
                 <Title title="our products"/>
                 <div className="row">
