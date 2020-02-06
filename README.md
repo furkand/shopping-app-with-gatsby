@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://raw.githubusercontent.com/fdmrtrk/shopping-app-with-gatsby/master/app.gif"  >
+</p>
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
