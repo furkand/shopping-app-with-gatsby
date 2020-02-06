@@ -18,6 +18,12 @@ html{
 }
 .nav-item{
   font-weight: bold !important;
+
+}
+.navbar {
+  position: fixed!important;
+  z-index: 100;
+  width: 100%;
 }
 .submit-form{
   color: #7F8688 !important;
